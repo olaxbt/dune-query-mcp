@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuneLink</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            background-color: #4a5568;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .content {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-top: 2rem;
+        }
+        h1 {
+            color: #2d3748;
+        }
+        code {
+            background-color: #f1f1f1;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+        }
+        .endpoint {
+            margin: 1rem 0;
+            padding: 1rem;
+            background-color: #f1f5f9;
+            border-left: 4px solid #4a5568;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>DuneLink</h1>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="content">
+            <h2>Welcome to DuneLink</h2>
+            <p>A modern bridge connecting Dune Analytics data to intelligent agents.</p>
+            
+            <h3>Available Endpoints:</h3>
+            
+            <div class="endpoint">
+                <h4>Health Check</h4>
+                <p><code>GET /dune/health</code></p>
+                <p>Check if the service is running correctly.</p>
+            </div>
+            
+            <div class="endpoint">
+                <h4>Get Latest Query Results</h4>
+                <p><code>GET /dune/query/{query_id}/latest</code></p>
+                <p>Retrieve the latest results for a specific Dune query.</p>
+            </div>
+            
+            <div class="endpoint">
+                <h4>Execute Query</h4>
+                <p><code>POST /dune/query/{query_id}/execute</code></p>
+                <p>Execute a Dune query and return the results.</p>
+            </div>
+            
+            <h3>MCP Tools:</h3>
+            <p>This server exposes the following MCP tools:</p>
+            <ul>
+                <li><code>get_latest_result(query_id: int)</code>: Fetch the latest results of a Dune query</li>
+                <li><code>run_query(query_id: int)</code>: Execute a Dune query and retrieve results</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html> 

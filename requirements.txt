@@ -1,0 +1,8 @@
+Flask==2.3.3
+loguru==0.7.2
+flask-cors==4.0.0
+flasgger==0.9.7.1
+httpx==0.27.0
+pandas==2.2.1
+python-dotenv==1.0.1
+mcp>=1.4.1 
