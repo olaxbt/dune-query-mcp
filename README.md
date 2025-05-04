@@ -1,4 +1,4 @@
-# DuneLink
+# Dune Query MCP
 
 ![Version](https://img.shields.io/badge/version-0.1.0-blue)
 ![Python](https://img.shields.io/badge/python-3.10%2B-green)
@@ -7,7 +7,7 @@ A modern bridge connecting Dune Analytics data to intelligent agents through Mod
 
 ## Overview
 
-DuneLink enables seamless integration of blockchain data analytics into your AI applications. By leveraging Dune Analytics' powerful query capabilities with the Model Control Protocol, this service allows LLMs and other AI systems to access on-chain data through simple, natural language interactions.
+dune-query-mcp enables seamless integration of blockchain data analytics into your AI applications. By leveraging Dune Analytics' powerful query capabilities with the Model Control Protocol, this service allows LLMs and other AI systems to access on-chain data through simple, natural language interactions.
 
 ## Core Capabilities
 
@@ -36,8 +36,8 @@ All data is returned in CSV format, providing:
 
 1. **Clone & Navigate**
    ```bash
-   git clone https://github.com/olaxbt/dune-query-mcp.git
-   cd dunelink
+   git clone https://github.com/olaxbt/dune-query-mcp-mcp.git
+   cd dune-query-mcp
    ```
 
 2. **Environment Setup**
@@ -67,7 +67,7 @@ All data is returned in CSV format, providing:
 
 ### Running the Service
 
-DuneLink offers two ways to run:
+dune-query-mcp offers two ways to run:
 
 #### As MCP Service
 
@@ -90,7 +90,7 @@ This provides access to the web interface and REST API endpoints.
 ```python
 from mcp.client import Client
 
-# Connect to DuneLink
+# Connect to Dune-query-mcp
 client = Client("http://localhost:8000")
 
 # Get latest results for a query
@@ -116,7 +116,7 @@ curl -X GET http://localhost:5000/dune/query/1234567/latest
 ## Architecture
 
 ```
-dunelink/
+dune-query-mcp/
 ├── app/                       # Application core
 │   ├── __init__.py            # Flask & MCP setup
 │   ├── routes/                # API endpoint definitions
